@@ -56,7 +56,14 @@ will be supported actively until April 2018 and maintained until April 2019.
 
 ### Notable Changes
 
-Coming Soon
+* **crypto**:
+  - update root certificates - Updated root certificates based on [NSS 3.30](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/NSS_3.30_release_notes) (Ben Noordhuis)
+* **deps**:
+  - upgrade OpenSSL to version 1.0.2.l
+* **http**:
+  - describe parse err in debug output - parse errors are now reported when NODE_DEBUG=http (Sam Roberts)
+* **zlib**:
+  - fix node crashing on invalid options - node will now throw an Error when zlib rejects the value of windowBits, instead of crashing (Alexey Orlenko)
 
 ### Commits
 
